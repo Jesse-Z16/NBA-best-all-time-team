@@ -1,0 +1,16 @@
+players = ['Curry','Kobe','Lebron','Shaq','Kareem']
+item_to_find = input(str('Enter an NBA legend:  '))
+
+index = 0 
+found = False 
+
+while found == False and index < len(players):
+    if players[index] == item_to_find:
+        found = True 
+    else:
+        index = index + 1 
+        
+if found == True:
+    print ((item_to_find),'plays at position', index)
+else:
+    print ('Player is not in my Best team of all time')
